@@ -1,0 +1,506 @@
+import { Check, Star, Wind, Timer, Flame } from "lucide-react"
+import { Footer } from "@/components/footer"
+
+export default function AirFryersPage() {
+  const products = [
+    {
+      name: "AirChef Pro 5.5L",
+      price: "$129.99",
+      image: "/modern-multicooker-on-kitchen-counter.jpg",
+      rating: 4.8,
+      reviews: 856,
+      capacity: "5.5L",
+      presets: 8,
+      features: ["5.5L Capacity", "Digital Display", "8 Presets", "Dishwasher Safe"],
+      badge: "Best Seller",
+      wattage: "1700W",
+      tempRange: "80-200°C",
+    },
+    {
+      name: "AirChef Compact 3.5L",
+      price: "$89.99",
+      image: "/compact-multicooker-6-liter-red.jpg",
+      rating: 4.7,
+      reviews: 623,
+      capacity: "3.5L",
+      presets: 6,
+      features: ["3.5L Capacity", "Touch Control", "6 Presets", "Compact Design"],
+      badge: "Budget Pick",
+      wattage: "1400W",
+      tempRange: "80-200°C",
+    },
+    {
+      name: "AirChef XL 7L",
+      price: "$179.99",
+      image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
+      rating: 4.9,
+      reviews: 1034,
+      capacity: "7L",
+      presets: 12,
+      features: ["7L Capacity", "Smart Control", "12 Presets", "Dual Basket"],
+      badge: "Premium",
+      wattage: "1800W",
+      tempRange: "50-230°C",
+    },
+    {
+      name: "AirChef Mini 2.5L",
+      price: "$69.99",
+      image: "/compact-multicooker-6-liter-red.jpg",
+      rating: 4.6,
+      reviews: 412,
+      capacity: "2.5L",
+      presets: 5,
+      features: ["2.5L Capacity", "Manual Control", "5 Presets", "Space Saving"],
+      badge: "Compact",
+      wattage: "1200W",
+      tempRange: "80-200°C",
+    },
+    {
+      name: "AirChef Family 9L",
+      price: "$219.99",
+      image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
+      rating: 4.9,
+      reviews: 789,
+      capacity: "9L",
+      presets: 15,
+      features: ["9L Capacity", "WiFi Control", "15 Presets", "Triple Basket"],
+      badge: "Family Size",
+      wattage: "2000W",
+      tempRange: "40-230°C",
+    },
+    {
+      name: "AirChef Smart 6L",
+      price: "$159.99",
+      image: "/modern-multicooker-on-kitchen-counter.jpg",
+      rating: 4.8,
+      reviews: 945,
+      capacity: "6L",
+      presets: 10,
+      features: ["6L Capacity", "App Control", "10 Presets", "Voice Assistant"],
+      badge: "Smart Home",
+      wattage: "1750W",
+      tempRange: "60-220°C",
+    },
+    {
+      name: "AirChef Turbo 5L",
+      price: "$139.99",
+      image: "/modern-multicooker-on-kitchen-counter.jpg",
+      rating: 4.7,
+      reviews: 678,
+      capacity: "5L",
+      presets: 9,
+      features: ["5L Capacity", "Turbo Mode", "9 Presets", "Quick Preheat"],
+      badge: "Fast Cook",
+      wattage: "1850W",
+      tempRange: "80-220°C",
+    },
+    {
+      name: "AirChef Deluxe 8L",
+      price: "$199.99",
+      image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
+      rating: 4.9,
+      reviews: 1156,
+      capacity: "8L",
+      presets: 14,
+      features: ["8L Capacity", "Rotisserie", "14 Presets", "Window View"],
+      badge: "Deluxe",
+      wattage: "1900W",
+      tempRange: "50-230°C",
+    },
+    {
+      name: "AirChef Eco 4.5L",
+      price: "$109.99",
+      image: "/compact-multicooker-6-liter-red.jpg",
+      rating: 4.7,
+      reviews: 534,
+      capacity: "4.5L",
+      presets: 7,
+      features: ["4.5L Capacity", "Energy Saving", "7 Presets", "Eco Mode"],
+      badge: "Eco-Friendly",
+      wattage: "1500W",
+      tempRange: "80-200°C",
+    },
+  ]
+
+  const features = [
+    {
+      icon: Wind,
+      title: "Rapid Air Technology",
+      description: "360° hot air circulation for perfectly crispy results every time",
+    },
+    {
+      icon: Timer,
+      title: "Precise Timing",
+      description: "Digital timer with auto shut-off for perfect cooking results",
+    },
+    {
+      icon: Flame,
+      title: "Less Oil, More Flavor",
+      description: "Use up to 85% less oil while maintaining delicious taste",
+    },
+  ]
+
+  const recipes = [
+    { name: "Crispy French Fries", time: "20 min", difficulty: "Easy" },
+    { name: "Air Fried Chicken Wings", time: "25 min", difficulty: "Easy" },
+    { name: "Roasted Vegetables", time: "15 min", difficulty: "Easy" },
+    { name: "Fish & Chips", time: "30 min", difficulty: "Medium" },
+    { name: "Homemade Donuts", time: "18 min", difficulty: "Medium" },
+    { name: "Stuffed Peppers", time: "22 min", difficulty: "Medium" },
+  ]
+
+  return (
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: "url('/wooden-table-ingredients.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        {/* Base Background */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-u84NRE4GgSpbTNEqP3emVt1KT5LlMI.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        />
+        {/* Dark Ingredients Overlay */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/dark-ingredients-bg.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+            opacity: 0.85,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-8">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Smart Air Fryers</h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            Enjoy crispy, delicious food with up to 85% less oil
+          </p>
+        </div>
+
+        <div className="relative z-10 flex items-center justify-center gap-8 px-4 py-16">
+          <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <img
+              src="/golden-crispy-french-fries-in-white-bowl-on-dark-s.jpg"
+              alt="Crispy French Fries"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <img
+              src="/perfectly-golden-air-fried-french-fries-in-rustic-.jpg"
+              alt="Air Fried French Fries"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 relative overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-u84NRE4GgSpbTNEqP3emVt1KT5LlMI.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/dark-ingredients-bg.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+            opacity: 0.85,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">Why Choose AirChef Air Fryers</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div key={index} className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
+                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                  <feature.icon className="text-white" size={32} />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-white">{feature.title}</h3>
+                <p className="text-white/90">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Products Grid */}
+      <section className="py-20 relative overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-u84NRE4GgSpbTNEqP3emVt1KT5LlMI.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/dark-ingredients-bg.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+            opacity: 0.85,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">Our Air Fryer Collection</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {products.map((product, index) => (
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-white/20"
+              >
+                <div className="relative h-64">
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      backgroundImage: `url('${product.image}')`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  />
+                  {product.badge && (
+                    <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                      {product.badge}
+                    </div>
+                  )}
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2 text-white">{product.name}</h3>
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={
+                            i < Math.floor(product.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-400"
+                          }
+                          size={16}
+                        />
+                      ))}
+                    </div>
+                    <span className="text-sm text-white/80">
+                      {product.rating} ({product.reviews} reviews)
+                    </span>
+                  </div>
+                  <div className="space-y-2 mb-6">
+                    {product.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm text-white/90">
+                        <Check className="text-sky-400" size={16} />
+                        <span>{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-3">
+                    {/* Updated "See on Amazon" button */}
+                    <a
+                      href="https://amazon.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-4 py-3 bg-white text-black rounded-lg hover:bg-white/90 transition font-semibold cursor-pointer text-center"
+                    >
+                      See on Amazon
+                    </a>
+                    <button className="flex-1 px-4 py-3 bg-yellow-800 text-white rounded-lg hover:bg-yellow-800/90 transition font-semibold cursor-pointer">
+                      Access the full review
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-20">
+            <h3 className="text-3xl font-bold text-center mb-12 text-white">Compare All Models</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full bg-white/10 backdrop-blur-md rounded-xl shadow-lg border border-white/20">
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th className="p-4 text-left font-semibold text-white">Model</th>
+                    <th className="p-4 text-left font-semibold text-white">Price</th>
+                    <th className="p-4 text-left font-semibold text-white">Capacity</th>
+                    <th className="p-4 text-left font-semibold text-white">Presets</th>
+                    <th className="p-4 text-left font-semibold text-white">Power</th>
+                    <th className="p-4 text-left font-semibold text-white">Temp Range</th>
+                    <th className="p-4 text-left font-semibold text-white">Rating</th>
+                    <th className="p-4 text-left font-semibold text-white">Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Pro 5.5L</td>
+                    <td className="p-4 text-white/90">$129.99</td>
+                    <td className="p-4 text-white/90">5.5L</td>
+                    <td className="p-4 text-white/90">8</td>
+                    <td className="p-4 text-white/90">1700W</td>
+                    <td className="p-4 text-white/90">80-200°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.8</td>
+                    <td className="p-4 text-sm text-white/70">Everyday cooking</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Compact 3.5L</td>
+                    <td className="p-4 text-white/90">$89.99</td>
+                    <td className="p-4 text-white/90">3.5L</td>
+                    <td className="p-4 text-white/90">6</td>
+                    <td className="p-4 text-white/90">1400W</td>
+                    <td className="p-4 text-white/90">80-200°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.7</td>
+                    <td className="p-4 text-sm text-white/70">Small kitchens</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef XL 7L</td>
+                    <td className="p-4 text-white/90">$179.99</td>
+                    <td className="p-4 text-white/90">7L</td>
+                    <td className="p-4 text-white/90">12</td>
+                    <td className="p-4 text-white/90">1800W</td>
+                    <td className="p-4 text-white/90">50-230°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.9</td>
+                    <td className="p-4 text-sm text-white/70">Large meals</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Mini 2.5L</td>
+                    <td className="p-4 text-white/90">$69.99</td>
+                    <td className="p-4 text-white/90">2.5L</td>
+                    <td className="p-4 text-white/90">5</td>
+                    <td className="p-4 text-white/90">1200W</td>
+                    <td className="p-4 text-white/90">80-200°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.6</td>
+                    <td className="p-4 text-sm text-white/70">Singles/couples</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Family 9L</td>
+                    <td className="p-4 text-white/90">$219.99</td>
+                    <td className="p-4 text-white/90">9L</td>
+                    <td className="p-4 text-white/90">15</td>
+                    <td className="p-4 text-white/90">2000W</td>
+                    <td className="p-4 text-white/90">40-230°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.9</td>
+                    <td className="p-4 text-sm text-white/70">Large families</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Smart 6L</td>
+                    <td className="p-4 text-white/90">$159.99</td>
+                    <td className="p-4 text-white/90">6L</td>
+                    <td className="p-4 text-white/90">10</td>
+                    <td className="p-4 text-white/90">1750W</td>
+                    <td className="p-4 text-white/90">60-220°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.8</td>
+                    <td className="p-4 text-sm text-white/70">Smart home users</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Turbo 5L</td>
+                    <td className="p-4 text-white/90">$139.99</td>
+                    <td className="p-4 text-white/90">5L</td>
+                    <td className="p-4 text-white/90">9</td>
+                    <td className="p-4 text-white/90">1850W</td>
+                    <td className="p-4 text-white/90">80-220°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.7</td>
+                    <td className="p-4 text-sm text-white/70">Quick meals</td>
+                  </tr>
+                  <tr className="border-b border-white/10 hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Deluxe 8L</td>
+                    <td className="p-4 text-white/90">$199.99</td>
+                    <td className="p-4 text-white/90">8L</td>
+                    <td className="p-4 text-white/90">14</td>
+                    <td className="p-4 text-white/90">1900W</td>
+                    <td className="p-4 text-white/90">50-230°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.9</td>
+                    <td className="p-4 text-sm text-white/70">Premium cooking</td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="p-4 font-medium text-white">AirChef Eco 4.5L</td>
+                    <td className="p-4 text-white/90">$109.99</td>
+                    <td className="p-4 text-white/90">4.5L</td>
+                    <td className="p-4 text-white/90">7</td>
+                    <td className="p-4 text-white/90">1500W</td>
+                    <td className="p-4 text-white/90">80-200°C</td>
+                    <td className="p-4 text-white/90">⭐ 4.7</td>
+                    <td className="p-4 text-sm text-white/70">Eco-conscious</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Recipes */}
+      <section className="py-20 relative overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-u84NRE4GgSpbTNEqP3emVt1KT5LlMI.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/dark-ingredients-bg.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+            opacity: 0.85,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">Popular Air Fryer Recipes</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {recipes.map((recipe, index) => (
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md hover:shadow-lg transition border border-white/20"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-white">{recipe.name}</h3>
+                <div className="flex items-center justify-between text-sm text-white/80">
+                  <span className="flex items-center gap-2">
+                    <Timer size={16} />
+                    {recipe.time}
+                  </span>
+                  <span className="px-3 py-1 text-white rounded-full bg-slate-600">{recipe.difficulty}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  )
+}
