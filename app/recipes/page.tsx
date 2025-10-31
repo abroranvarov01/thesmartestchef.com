@@ -9,7 +9,7 @@ export default function RecipesPage() {
       time: "20 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/creamy-mushroom-risotto.jpg",
+      image: "/creamy-mushroom-risotto-food-photography.jpg",
       tags: ["Vegetarian", "Quick", "Elegant"],
       description: "Silky smooth risotto with earthy mushrooms and parmesan cheese",
       ingredients: [
@@ -30,7 +30,7 @@ export default function RecipesPage() {
       time: "25 min",
       servings: "6",
       difficulty: "Medium",
-      image: "/spicy-thai-curry-with-rice.jpg",
+      image: "/spicy-thai-curry-with-rice-food-photography.jpg",
       tags: ["Spicy", "Asian", "Quick"],
       description: "Aromatic Thai curry with coconut milk and fresh vegetables",
       ingredients: [
@@ -51,7 +51,7 @@ export default function RecipesPage() {
       time: "30 min",
       servings: "8",
       difficulty: "Medium",
-      image: "/rich-beef-bourguignon-with-vegetables.jpg",
+      image: "/beef-bourguignon-with-vegetables-food-photography.jpg",
       tags: ["French", "Comfort", "Impressive"],
       description: "Classic French beef stew with red wine and pearl onions",
       ingredients: [
@@ -72,7 +72,7 @@ export default function RecipesPage() {
       time: "18 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/fresh-mediterranean-seafood-pasta.jpg",
+      image: "/mediterranean-seafood-pasta-food-photography.jpg",
       tags: ["Seafood", "Healthy", "Quick"],
       description: "Light and fresh pasta with shrimp and Mediterranean herbs",
       ingredients: [
@@ -93,7 +93,7 @@ export default function RecipesPage() {
       time: "45 min",
       servings: "10",
       difficulty: "Easy",
-      image: "/slow-cooked-pulled-pork-sandwich.jpg",
+      image: "/pulled-pork-sandwich-food-photography.jpg",
       tags: ["BBQ", "Comfort", "Crowd-pleaser"],
       description: "Tender pulled pork with smoky BBQ sauce, perfect for sandwiches",
       ingredients: [
@@ -114,7 +114,7 @@ export default function RecipesPage() {
       time: "22 min",
       servings: "4",
       difficulty: "Medium",
-      image: "/creamy-chicken-marsala-with-mushrooms.jpg",
+      image: "/chicken-marsala-with-mushrooms-food-photography.jpg",
       tags: ["Italian", "Elegant", "Quick"],
       description: "Tender chicken in a rich Marsala wine and mushroom sauce",
       ingredients: [
@@ -135,7 +135,7 @@ export default function RecipesPage() {
       time: "20 min",
       servings: "6",
       difficulty: "Easy",
-      image: "/vegetable-minestrone-soup.jpg",
+      image: "/vegetable-minestrone-soup-food-photography.jpg",
       tags: ["Vegetarian", "Healthy", "Comfort"],
       description: "Hearty Italian vegetable soup with pasta and beans",
       ingredients: [
@@ -156,7 +156,7 @@ export default function RecipesPage() {
       time: "25 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/spiced-lentil-curry-with-rice.jpg",
+      image: "/spiced-lentil-curry-with-rice-food-photography.jpg",
       tags: ["Vegetarian", "Vegan", "Healthy"],
       description: "Protein-rich lentil curry with aromatic Indian spices",
       ingredients: [
@@ -177,7 +177,7 @@ export default function RecipesPage() {
       time: "20 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/honey-garlic-chicken-with-vegetables.jpg",
+      image: "/honey-garlic-chicken-with-vegetables-food-photogra.jpg",
       tags: ["Asian", "Quick", "Family-friendly"],
       description: "Sweet and savory chicken glazed with honey and garlic",
       ingredients: [
@@ -198,7 +198,7 @@ export default function RecipesPage() {
       time: "18 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/creamy-tomato-basil-pasta.jpg",
+      image: "/creamy-tomato-basil-pasta-food-photography.jpg",
       tags: ["Vegetarian", "Italian", "Quick"],
       description: "Classic pasta in a silky tomato and cream sauce with fresh basil",
       ingredients: [
@@ -219,7 +219,7 @@ export default function RecipesPage() {
       time: "30 min",
       servings: "8",
       difficulty: "Easy",
-      image: "/beef-chili-con-carne.jpg",
+      image: "/beef-chili-con-carne-food-photography.jpg",
       tags: ["Comfort", "Spicy", "Crowd-pleaser"],
       description: "Hearty beef chili with beans and warming spices",
       ingredients: [
@@ -240,7 +240,7 @@ export default function RecipesPage() {
       time: "15 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/teriyaki-salmon-with-vegetables.jpg",
+      image: "/teriyaki-salmon-with-vegetables-food-photography.jpg",
       tags: ["Seafood", "Healthy", "Quick"],
       description: "Glazed salmon with sweet and savory teriyaki sauce",
       ingredients: [
@@ -261,7 +261,7 @@ export default function RecipesPage() {
       time: "15 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/colorful-vegetable-stir-fry.png",
+      image: "/colorful-vegetable-stir-fry-food-photography.jpg",
       tags: ["Vegetarian", "Healthy", "Quick"],
       description: "Crispy vegetables in a savory Asian sauce",
       ingredients: [
@@ -282,7 +282,7 @@ export default function RecipesPage() {
       time: "35 min",
       servings: "6",
       difficulty: "Medium",
-      image: "/moroccan-lamb-tagine.png",
+      image: "/moroccan-lamb-tagine-food-photography.jpg",
       tags: ["Moroccan", "Exotic", "Impressive"],
       description: "Moroccan-spiced lamb with dried fruits and warm spices",
       ingredients: [
@@ -303,7 +303,7 @@ export default function RecipesPage() {
       time: "20 min",
       servings: "6",
       difficulty: "Easy",
-      image: "/creamy-potato-leek-soup.jpg",
+      image: "/creamy-potato-leek-soup-food-photography.jpg",
       tags: ["Comfort", "Vegetarian", "Healthy"],
       description: "Silky smooth soup with tender potatoes and leeks",
       ingredients: [
@@ -324,7 +324,7 @@ export default function RecipesPage() {
       time: "28 min",
       servings: "4",
       difficulty: "Medium",
-      image: "/chicken-tikka-masala-with-rice.jpg",
+      image: "/chicken-tikka-masala-food-photography.jpg",
       tags: ["Indian", "Spicy", "Elegant"],
       description: "Tender chicken in a creamy tomato-based Indian sauce",
       ingredients: [
@@ -345,7 +345,7 @@ export default function RecipesPage() {
       time: "40 min",
       servings: "8",
       difficulty: "Easy",
-      image: "/mexican-pork-carnitas.jpg",
+      image: "/pork-carnitas-tacos-food-photography.jpg",
       tags: ["Mexican", "Comfort", "Crowd-pleaser"],
       description: "Tender Mexican-style pork perfect for tacos and burritos",
       ingredients: [
@@ -366,7 +366,7 @@ export default function RecipesPage() {
       time: "25 min",
       servings: "6",
       difficulty: "Medium",
-      image: "/vegetable-paella.jpg",
+      image: "/vegetable-paella-spanish-rice-food-photography.jpg",
       tags: ["Spanish", "Vegetarian", "Elegant"],
       description: "Colorful Spanish rice dish with saffron and vegetables",
       ingredients: [
@@ -387,7 +387,7 @@ export default function RecipesPage() {
       time: "25 min",
       servings: "4",
       difficulty: "Medium",
-      image: "/beef-stroganoff-with-egg-noodles.jpg",
+      image: "/beef-stroganoff-with-noodles-food-photography.jpg",
       tags: ["Russian", "Comfort", "Elegant"],
       description: "Tender beef in a creamy sour cream sauce with egg noodles",
       ingredients: [
@@ -408,12 +408,10 @@ export default function RecipesPage() {
       time: "20 min",
       servings: "4",
       difficulty: "Easy",
-      image: "/thai-green-curry-vegetables.jpg",
+      image: "/thai-green-curry-vegetables-food-photography.jpg",
       tags: ["Thai", "Vegetarian", "Quick"],
       description: "Vibrant green curry with fresh vegetables and coconut milk",
       ingredients: [
-        "3 tbsp green curry paste",
-        "2 cans coconut milk",
         "6 cups mixed vegetables",
         "Fresh basil leaves",
         "2 limes",
@@ -422,6 +420,28 @@ export default function RecipesPage() {
       ],
       instructions:
         "Sauté curry paste and garlic in multicooker for 1 minute. Add vegetables and coconut milk. Close lid and cook on curry setting for 15 minutes. Stir in fish sauce, lime juice, and fresh basil. Serve over jasmine rice.",
+    },
+    {
+      id: 21,
+      name: "Classic Beef Lasagna",
+      time: "35 min",
+      servings: "8",
+      difficulty: "Medium",
+      image: "/classic-beef-lasagna-food-photography.jpg",
+      tags: ["Italian", "Comfort", "Family-friendly"],
+      description: "Layers of pasta, rich meat sauce, and creamy cheese",
+      ingredients: [
+        "500g ground beef",
+        "12 lasagna noodles",
+        "800g marinara sauce",
+        "500g ricotta cheese",
+        "3 cups mozzarella cheese",
+        "1 cup Parmesan cheese",
+        "2 eggs",
+        "Fresh basil",
+      ],
+      instructions:
+        "Brown beef in multicooker on sauté mode. Mix ricotta with eggs and half the Parmesan. Layer sauce, noodles, beef, ricotta mixture, and mozzarella in multicooker. Repeat layers. Top with remaining cheese. Close lid and cook on bake setting for 30 minutes. Let rest 10 minutes before serving.",
     },
   ]
 
@@ -488,21 +508,21 @@ export default function RecipesPage() {
             {recipes.map((recipe) => (
               <div
                 key={recipe.id}
-                className="group rounded-2xl overflow-hidden bg-gray-900/90 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-white/10"
+                className="group rounded-2xl overflow-hidden bg-gray-900 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-white/10"
               >
-                <div className="relative overflow-hidden h-64">
+                <div className="relative overflow-hidden h-64 bg-gray-900">
                   <img
                     src={recipe.image || "/placeholder.svg"}
                     alt={recipe.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                   <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-gray-900 px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
                     {recipe.difficulty}
                   </div>
                 </div>
 
-                <div className="p-6 space-y-4">
+                <div className="p-6 space-y-4 bg-gray-900">
                   <h3 className="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors duration-300 leading-tight">
                     {recipe.name}
                   </h3>

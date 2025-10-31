@@ -1,6 +1,6 @@
 "use client"
 
-import { Play } from "lucide-react"
+import { Play, X } from "lucide-react"
 import { useState } from "react"
 
 export function VideoReviews() {
@@ -13,20 +13,23 @@ export function VideoReviews() {
       chef: "Chef Maria",
       thumbnail: "/creamy-risotto-in-multicooker.jpg",
       duration: "8:42",
+      videoUrl: "https://youtu.be/TxY6fta2g_c",
     },
     {
       id: 2,
       title: "Tender Beef Stew Recipe",
-      chef: "Chef James",
+      chef: "Chef Fred",
       thumbnail: "/beef-stew-cooking-in-multicooker.jpg",
       duration: "12:15",
+      videoUrl: "https://youtu.be/it_G4K9QkN0",
     },
     {
       id: 3,
       title: "Quick Chicken Curry",
-      chef: "Chef Priya",
+      chef: "Chef Aishwarya", // Changed from "Chef Sarah" to "Chef Aishwarya"
       thumbnail: "/aromatic-chicken-curry-in-multicooker.jpg",
       duration: "10:30",
+      videoUrl: "https://youtu.be/196O0LPFCec",
     },
   ]
 
@@ -92,15 +95,27 @@ export function VideoReviews() {
             onClick={() => setSelectedVideo(null)}
           >
             <div
-              className="bg-background rounded-xl overflow-hidden max-w-2xl w-full"
+              className="bg-background rounded-xl overflow-hidden max-w-4xl w-full relative"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="aspect-video bg-black flex items-center justify-center">
-                <div className="text-center">
-                  <Play className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <p className="text-white">Video Player</p>
-                  <p className="text-white/60 text-sm mt-2">Embed your video here</p>
-                </div>
+              <button
+                onClick={() => setSelectedVideo(null)}
+                className="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition"
+              >
+                <X className="w-6 h-6" />
+              </button>
+
+              <div className="aspect-video bg-black">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={reviews.find((r) => r.id === selectedVideo)?.videoUrl}
+                  title={reviews.find((r) => r.id === selectedVideo)?.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-foreground mb-2">

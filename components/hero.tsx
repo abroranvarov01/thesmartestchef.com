@@ -1,7 +1,9 @@
+import Link from "next/link"
+
 export function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-center py-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage:
           "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xreaGO9q6iY6Wu4JKBifbyqqTYTdte.png)",
@@ -22,7 +24,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight text-balance">
@@ -33,12 +35,18 @@ export function Hero() {
               restaurant-quality dishes in minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition bg-transparent text-xl text-card cursor-pointer">
-                See on Amazon
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold hover:bg-primary/5 transition text-card border-background cursor-pointer">
-                Access the full review
-              </button>
+              <Link
+                href="/multicookers"
+                className="px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition bg-transparent text-xl text-card cursor-pointer text-center"
+              >
+                Multicookers
+              </Link>
+              <Link
+                href="/airfryers"
+                className="border-2 px-8 py-3 rounded-lg font-semibold hover:bg-primary/5 transition text-card border-background cursor-pointer text-center"
+              >
+                Airfryers
+              </Link>
             </div>
           </div>
           <div className="relative h-96 md:h-full">
