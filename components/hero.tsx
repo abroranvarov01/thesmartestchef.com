@@ -31,7 +31,7 @@ export function Hero() {
               Cook Smarter, Eat Better
             </h1>
             <p className="text-lg text-white leading-relaxed text-balance">
-              Discover the power of TheSmartChef cooking. From quick weeknight dinners to impressive meals, prepare
+              Discover the power of TheSmartChefs cooking. From quick weeknight dinners to impressive meals, prepare
               restaurant-quality dishes in minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

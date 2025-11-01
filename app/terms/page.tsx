@@ -48,7 +48,7 @@ export default function TermsPage() {
             <div>
               <h2 className="text-2xl font-bold mb-4 text-white">1. Acceptance of Terms</h2>
               <p className="text-white/90">
-                By accessing and using TheSmartChef products and services, you accept and agree to be bound by these
+                By accessing and using TheSmartChefs products and services, you accept and agree to be bound by these
                 Terms and Conditions. If you do not agree to these terms, please do not use our products or services.
               </p>
             </div>
@@ -69,7 +69,7 @@ export default function TermsPage() {
             <div>
               <h2 className="text-2xl font-bold mb-4 text-white">3. Warranty and Returns</h2>
               <p className="text-white/90 mb-4">
-                All TheSmartChef products come with a standard warranty. Please refer to our Warranty page for detailed
+                All TheSmartChefs products come with a standard warranty. Please refer to our Warranty page for detailed
                 information about coverage, exclusions, and claim procedures.
               </p>
               <p className="text-white/90">
@@ -81,7 +81,7 @@ export default function TermsPage() {
             <div>
               <h2 className="text-2xl font-bold mb-4 text-white">4. Limitation of Liability</h2>
               <p className="text-white/90">
-                TheSmartChef shall not be liable for any indirect, incidental, special, consequential, or punitive
+                TheSmartChefs shall not be liable for any indirect, incidental, special, consequential, or punitive
                 damages resulting from your use of our products. Our total liability shall not exceed the purchase price
                 of the product.
               </p>
@@ -91,8 +91,8 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold mb-4 text-white">5. Intellectual Property</h2>
               <p className="text-white/90">
                 All content on our website, including text, graphics, logos, images, and software, is the property of
-                TheSmartChef and protected by copyright and trademark laws. You may not reproduce, distribute, or create
-                derivative works without our written permission.
+                TheSmartChefs and protected by copyright and trademark laws. You may not reproduce, distribute, or
+                create derivative works without our written permission.
               </p>
             </div>
 

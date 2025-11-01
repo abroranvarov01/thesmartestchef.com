@@ -26,7 +26,7 @@ const products = [
   },
   {
     slug: "compact-6l",
-    name: "TheSmartChef Compact 6L",
+    name: "TheSmartChefs Compact 6L",
     image: "/compact-multicooker-6-liter-red.jpg",
     rating: 4.8,
     reviews: 892,
@@ -34,7 +34,7 @@ const products = [
     badge: "Popular",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Compact 6L is designed for couples and small families who want the convenience of a multicooker without taking up too much counter space. This popular model features a 6-liter capacity that's perfect for preparing meals for 2-4 people. The non-stick inner pot ensures easy food release and simple cleanup, while the 12 pre-programmed cooking functions handle everything from rice and porridge to stews and yogurt. Energy-efficient design means you can cook delicious meals while keeping your electricity bills low. The intuitive control panel makes operation straightforward, even for first-time multicooker users. With its compact footprint and vibrant red finish, this multicooker looks great on any kitchen counter while delivering professional-quality results.",
+      "The TheSmartChefs Compact 6L is designed for couples and small families who want the convenience of a multicooker without taking up too much counter space. This popular model features a 6-liter capacity that's perfect for preparing meals for 2-4 people. The non-stick inner pot ensures easy food release and simple cleanup, while the 12 pre-programmed cooking functions handle everything from rice and porridge to stews and yogurt. Energy-efficient design means you can cook delicious meals while keeping your electricity bills low. The intuitive control panel makes operation straightforward, even for first-time multicooker users. With its compact footprint and vibrant red finish, this multicooker looks great on any kitchen counter while delivering professional-quality results.",
     specifications: {
       capacity: "6 Liters",
       programs: "12 Cooking Programs",
@@ -46,7 +46,7 @@ const products = [
   },
   {
     slug: "elite-10l",
-    name: "TheSmartChef Elite 10L",
+    name: "TheSmartChefs Elite 10L",
     image: "/modern-multicooker-on-kitchen-counter.jpg",
     rating: 5.0,
     reviews: 634,
@@ -54,7 +54,7 @@ const products = [
     badge: "Premium",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Elite 10L represents the pinnacle of multicooker technology, combining massive capacity with cutting-edge smart features. With its impressive 10-liter capacity, this premium appliance can easily handle large family meals and entertaining. The WiFi connectivity allows you to control and monitor your cooking from anywhere using your smartphone, receiving notifications when your meal is ready. Twenty pre-programmed cooking functions provide unmatched versatility, from traditional pressure cooking and slow cooking to advanced techniques like sous vide and fermentation. The premium build quality features a brushed stainless steel exterior, reinforced inner pot, and precision temperature sensors for consistent results. Perfect for tech-savvy home chefs who demand the best in both performance and convenience.",
+      "The TheSmartChefs Elite 10L represents the pinnacle of multicooker technology, combining massive capacity with cutting-edge smart features. With its impressive 10-liter capacity, this premium appliance can easily handle large family meals and entertaining. The WiFi connectivity allows you to control and monitor your cooking from anywhere using your smartphone, receiving notifications when your meal is ready. Twenty pre-programmed cooking functions provide unmatched versatility, from traditional pressure cooking and slow cooking to advanced techniques like sous vide and fermentation. The premium build quality features a brushed stainless steel exterior, reinforced inner pot, and precision temperature sensors for consistent results. Perfect for tech-savvy home chefs who demand the best in both performance and convenience.",
     specifications: {
       capacity: "10 Liters",
       programs: "20 Cooking Programs",
@@ -66,7 +66,7 @@ const products = [
   },
   {
     slug: "mini-4l",
-    name: "TheSmartChef Mini 4L",
+    name: "TheSmartChefs Mini 4L",
     image: "/compact-multicooker-6-liter-red.jpg",
     rating: 4.7,
     reviews: 543,
@@ -74,7 +74,7 @@ const products = [
     badge: "Budget Friendly",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Mini 4L is the perfect entry-level multicooker for singles, couples, or anyone with limited kitchen space. Despite its compact 4-liter capacity, this budget-friendly appliance doesn't compromise on functionality, offering 10 essential cooking programs that cover all your basic cooking needs. The ultra-compact design makes it ideal for small apartments, dorm rooms, or RVs, while still providing enough capacity to prepare satisfying meals for 2-3 people. The simple interface and straightforward operation make it perfect for beginners, while the quality construction ensures years of reliable service. Whether you're cooking rice, making soup, or preparing a quick stew, the Mini 4L delivers consistent results without breaking the bank.",
+      "The TheSmartChefs Mini 4L is the perfect entry-level multicooker for singles, couples, or anyone with limited kitchen space. Despite its compact 4-liter capacity, this budget-friendly appliance doesn't compromise on functionality, offering 10 essential cooking programs that cover all your basic cooking needs. The ultra-compact design makes it ideal for small apartments, dorm rooms, or RVs, while still providing enough capacity to prepare satisfying meals for 2-3 people. The simple interface and straightforward operation make it perfect for beginners, while the quality construction ensures years of reliable service. Whether you're cooking rice, making soup, or preparing a quick stew, the Mini 4L delivers consistent results without breaking the bank.",
     specifications: {
       capacity: "4 Liters",
       programs: "10 Cooking Programs",
@@ -86,7 +86,7 @@ const products = [
   },
   {
     slug: "family-12l",
-    name: "TheSmartChef Family 12L",
+    name: "TheSmartChefs Family 12L",
     image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
     rating: 4.9,
     reviews: 421,
@@ -94,7 +94,7 @@ const products = [
     badge: "Family Size",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Family 12L is specifically engineered for large families and those who love to entertain. With its massive 12-liter capacity, this multicooker can easily prepare meals for 8-10 people, making it perfect for family gatherings, parties, or batch cooking for the week ahead. The extra-large inner pot is constructed from heavy-duty stainless steel for superior heat distribution and durability. Eighteen versatile cooking programs handle everything from everyday meals to special occasion dishes, while the powerful heating element ensures even cooking throughout the large capacity. The reinforced lid and enhanced safety features provide peace of mind when cooking large quantities. If you're tired of cooking in batches or need a reliable appliance for feeding a crowd, the Family 12L is your ideal solution.",
+      "The TheSmartChefs Family 12L is specifically engineered for large families and those who love to entertain. With its massive 12-liter capacity, this multicooker can easily prepare meals for 8-10 people, making it perfect for family gatherings, parties, or batch cooking for the week ahead. The extra-large inner pot is constructed from heavy-duty stainless steel for superior heat distribution and durability. Eighteen versatile cooking programs handle everything from everyday meals to special occasion dishes, while the powerful heating element ensures even cooking throughout the large capacity. The reinforced lid and enhanced safety features provide peace of mind when cooking large quantities. If you're tired of cooking in batches or need a reliable appliance for feeding a crowd, the Family 12L is your ideal solution.",
     specifications: {
       capacity: "12 Liters",
       programs: "18 Cooking Programs",
@@ -106,7 +106,7 @@ const products = [
   },
   {
     slug: "air-7l",
-    name: "TheSmartChef Air 7L",
+    name: "TheSmartChefs Air 7L",
     image: "/modern-multicooker-on-kitchen-counter.jpg",
     rating: 4.8,
     reviews: 789,
@@ -114,7 +114,7 @@ const products = [
     badge: "Versatile",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Air 7L is the ultimate versatile kitchen appliance, combining traditional multicooker functions with advanced air frying technology. This innovative 2-in-1 design eliminates the need for a separate air fryer, saving valuable counter space while expanding your cooking possibilities. The 7-liter capacity is perfect for families of 4-6, while the dual cooking modes allow you to pressure cook and air fry in the same appliance. Sixteen pre-programmed functions cover everything from crispy air-fried chicken to tender slow-cooked roasts. The unique air frying lid creates perfectly crispy results with up to 75% less fat than traditional frying methods. Whether you're craving healthy crispy foods or comforting pressure-cooked meals, the Air 7L delivers exceptional versatility and performance.",
+      "The TheSmartChefs Air 7L is the ultimate versatile kitchen appliance, combining traditional multicooker functions with advanced air frying technology. This innovative 2-in-1 design eliminates the need for a separate air fryer, saving valuable counter space while expanding your cooking possibilities. The 7-liter capacity is perfect for families of 4-6, while the dual cooking modes allow you to pressure cook and air fry in the same appliance. Sixteen pre-programmed functions cover everything from crispy air-fried chicken to tender slow-cooked roasts. The unique air frying lid creates perfectly crispy results with up to 75% less fat than traditional frying methods. Whether you're craving healthy crispy foods or comforting pressure-cooked meals, the Air 7L delivers exceptional versatility and performance.",
     specifications: {
       capacity: "7 Liters",
       programs: "16 Cooking Programs",
@@ -126,7 +126,7 @@ const products = [
   },
   {
     slug: "express-5l",
-    name: "TheSmartChef Express 5L",
+    name: "TheSmartChefs Express 5L",
     image: "/compact-multicooker-6-liter-red.jpg",
     rating: 4.6,
     reviews: 612,
@@ -134,7 +134,7 @@ const products = [
     badge: "Fast Cooking",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Express 5L is engineered for speed without sacrificing quality, making it perfect for busy professionals and families on the go. The enhanced high-pressure mode cooks food up to 70% faster than traditional methods, turning tough cuts of meat tender in minutes and cooking dried beans without pre-soaking. The 5-liter capacity is ideal for small to medium families, while the quick-release valve allows for safe and rapid pressure release when you need your meal in a hurry. Thirteen cooking programs are optimized for speed and efficiency, covering all your essential cooking needs from quick rice to express stews. The streamlined design and intuitive controls make operation simple, even when you're rushing to get dinner on the table.",
+      "The TheSmartChefs Express 5L is engineered for speed without sacrificing quality, making it perfect for busy professionals and families on the go. The enhanced high-pressure mode cooks food up to 70% faster than traditional methods, turning tough cuts of meat tender in minutes and cooking dried beans without pre-soaking. The 5-liter capacity is ideal for small to medium families, while the quick-release valve allows for safe and rapid pressure release when you need your meal in a hurry. Thirteen cooking programs are optimized for speed and efficiency, covering all your essential cooking needs from quick rice to express stews. The streamlined design and intuitive controls make operation simple, even when you're rushing to get dinner on the table.",
     specifications: {
       capacity: "5 Liters",
       programs: "13 Cooking Programs",
@@ -146,7 +146,7 @@ const products = [
   },
   {
     slug: "gourmet-9l",
-    name: "TheSmartChef Gourmet 9L",
+    name: "TheSmartChefs Gourmet 9L",
     image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
     rating: 4.9,
     reviews: 356,
@@ -154,7 +154,7 @@ const products = [
     badge: "Chef's Choice",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Gourmet 9L is designed for culinary enthusiasts who demand restaurant-quality results at home. This chef-grade multicooker features an impressive 22 cooking programs, including advanced techniques like sous vide for perfectly cooked proteins and vegetables. The precision temperature control maintains exact temperatures within 0.5°C, ensuring consistent results every time. The included recipe app provides access to hundreds of chef-developed recipes with step-by-step instructions, automatically adjusting cooking parameters for perfect results. The 9-liter capacity is ideal for serious home cooks who want to experiment with complex recipes and techniques. Premium construction with a heavy-gauge stainless steel pot and reinforced heating element ensures professional-level performance and durability. If you're passionate about cooking and want to elevate your culinary skills, the Gourmet 9L is your perfect kitchen companion.",
+      "The TheSmartChefs Gourmet 9L is designed for culinary enthusiasts who demand restaurant-quality results at home. This chef-grade multicooker features an impressive 22 cooking programs, including advanced techniques like sous vide for perfectly cooked proteins and vegetables. The precision temperature control maintains exact temperatures within 0.5°C, ensuring consistent results every time. The included recipe app provides access to hundreds of chef-developed recipes with step-by-step instructions, automatically adjusting cooking parameters for perfect results. The 9-liter capacity is ideal for serious home cooks who want to experiment with complex recipes and techniques. Premium construction with a heavy-gauge stainless steel pot and reinforced heating element ensures professional-level performance and durability. If you're passionate about cooking and want to elevate your culinary skills, the Gourmet 9L is your perfect kitchen companion.",
     specifications: {
       capacity: "9 Liters",
       programs: "22 Cooking Programs",
@@ -166,7 +166,7 @@ const products = [
   },
   {
     slug: "eco-6l",
-    name: "TheSmartChef Eco 6L",
+    name: "TheSmartChefs Eco 6L",
     image: "/modern-multicooker-on-kitchen-counter.jpg",
     rating: 4.7,
     reviews: 498,
@@ -174,7 +174,7 @@ const products = [
     badge: "Eco-Friendly",
     amazonLink: "https://www.amazon.com",
     description:
-      "The TheSmartChef Eco 6L is the environmentally conscious choice for sustainable cooking without compromising performance. This innovative multicooker features an advanced energy-saving mode that reduces power consumption by up to 30% compared to standard models, helping you reduce your carbon footprint while saving on electricity bills. The inner pot is made from eco-friendly ceramic coating that's free from PFOA and other harmful chemicals, ensuring safe and healthy cooking for your family. The 6-liter capacity is perfect for everyday family meals, while the 12 cooking programs cover all essential cooking methods. The exterior is constructed from recycled materials, and the packaging is 100% recyclable. For environmentally conscious consumers who want to make sustainable choices without sacrificing convenience or performance, the Eco 6L is the ideal multicooker.",
+      "The TheSmartChefs Eco 6L is the environmentally conscious choice for sustainable cooking without compromising performance. This innovative multicooker features an advanced energy-saving mode that reduces power consumption by up to 30% compared to standard models, helping you reduce your carbon footprint while saving on electricity bills. The inner pot is made from eco-friendly ceramic coating that's free from PFOA and other harmful chemicals, ensuring safe and healthy cooking for your family. The 6-liter capacity is perfect for everyday family meals, while the 12 cooking programs cover all essential cooking methods. The exterior is constructed from recycled materials, and the packaging is 100% recyclable. For environmentally conscious consumers who want to make sustainable choices without sacrificing convenience or performance, the Eco 6L is the ideal multicooker.",
     specifications: {
       capacity: "6 Liters",
       programs: "12 Cooking Programs",

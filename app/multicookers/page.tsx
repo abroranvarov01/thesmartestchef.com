@@ -28,7 +28,7 @@ export default function MulticookersPage() {
     },
     {
       slug: "elite-10l",
-      name: "TheSmartChef Elite 10L",
+      name: "TheSmartChefs Elite 10L",
       price: "$249.99",
       image: "/modern-multicooker-on-kitchen-counter.jpg",
       rating: 5.0,
@@ -39,7 +39,7 @@ export default function MulticookersPage() {
     },
     {
       slug: "mini-4l",
-      name: "TheSmartChef Mini 4L",
+      name: "TheSmartChefs Mini 4L",
       price: "$99.99",
       image: "/compact-multicooker-6-liter-red.jpg",
       rating: 4.7,
@@ -50,7 +50,7 @@ export default function MulticookersPage() {
     },
     {
       slug: "family-12l",
-      name: "TheSmartChef Family 12L",
+      name: "TheSmartChefs Family 12L",
       price: "$299.99",
       image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
       rating: 4.9,
@@ -61,7 +61,7 @@ export default function MulticookersPage() {
     },
     {
       slug: "air-7l",
-      name: "TheSmartChef Air 7L",
+      name: "TheSmartChefs Air 7L",
       price: "$229.99",
       image: "/modern-multicooker-on-kitchen-counter.jpg",
       rating: 4.8,
@@ -72,7 +72,7 @@ export default function MulticookersPage() {
     },
     {
       slug: "express-5l",
-      name: "TheSmartChef Express 5L",
+      name: "TheSmartChefs Express 5L",
       price: "$179.99",
       image: "/compact-multicooker-6-liter-red.jpg",
       rating: 4.6,
@@ -83,7 +83,7 @@ export default function MulticookersPage() {
     },
     {
       slug: "gourmet-9l",
-      name: "TheSmartChef Gourmet 9L",
+      name: "TheSmartChefs Gourmet 9L",
       price: "$279.99",
       image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
       rating: 4.9,
@@ -94,7 +94,7 @@ export default function MulticookersPage() {
     },
     {
       slug: "eco-6l",
-      name: "TheSmartChef Eco 6L",
+      name: "TheSmartChefs Eco 6L",
       price: "$139.99",
       image: "/modern-multicooker-on-kitchen-counter.jpg",
       rating: 4.7,
@@ -180,7 +180,7 @@ export default function MulticookersPage() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-16 text-white">Why Choose TheSmartChef Multicookers</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">Why Choose TheSmartChefs Multicookers</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div
@@ -199,7 +199,7 @@ export default function MulticookersPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-20 relative">
+      <section id="products" className="py-20 relative">
         <div
           className="absolute inset-0"
           style={{

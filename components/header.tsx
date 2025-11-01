@@ -50,7 +50,7 @@ export function Header() {
           {/* Logo and Brand Section */}
           <div className="flex items-center gap-4 group">
             <Link href="/" className="flex flex-col transition-transform group-hover:scale-105">
-              <span className="text-2xl font-bold text-white">TheSmartChef</span>
+              <span className="text-2xl font-bold text-white">TheSmartChefs</span>
               <span className="text-sm text-white/90">Premium Cooking</span>
             </Link>
           </div>
@@ -62,13 +62,18 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  scroll={true}
                   className="text-white hover:text-white/80 transition-colors font-medium"
                 >
                   {item.label}
                 </Link>
               ))}
 
-              <Link href="/accessories" className="text-white hover:text-white/80 transition-colors font-medium">
+              <Link
+                href="/accessories"
+                scroll={true}
+                className="text-white hover:text-white/80 transition-colors font-medium"
+              >
                 Accessories
               </Link>
 
@@ -100,6 +105,7 @@ export function Header() {
                         <Link
                           key={item.href}
                           href={item.href}
+                          scroll={true}
                           className="relative block px-6 py-3 text-gray-900 hover:bg-white/40 hover:text-gray-900 transition-colors text-base font-semibold"
                         >
                           {item.label}
@@ -110,7 +116,11 @@ export function Header() {
                 )}
               </div>
 
-              <Link href="/recipes" className="text-white hover:text-white/80 transition-colors font-medium">
+              <Link
+                href="/recipes"
+                scroll={true}
+                className="text-white hover:text-white/80 transition-colors font-medium"
+              >
                 Recipes
               </Link>
             </div>
@@ -129,6 +139,7 @@ export function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
+                    scroll={true}
                     className="text-lg font-medium hover:text-primary transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
@@ -138,6 +149,7 @@ export function Header() {
 
                 <Link
                   href="/accessories"
+                  scroll={true}
                   className="text-lg font-medium hover:text-primary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
@@ -150,6 +162,7 @@ export function Header() {
                     <Link
                       key={item.href}
                       href={item.href}
+                      scroll={true}
                       className="block text-base font-medium hover:text-primary transition-colors py-2"
                       onClick={() => setIsOpen(false)}
                     >
@@ -160,6 +173,7 @@ export function Header() {
 
                 <Link
                   href="/recipes"
+                  scroll={true}
                   className="text-lg font-medium hover:text-primary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >

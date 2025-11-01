@@ -52,7 +52,7 @@ export default function DisclaimerPage() {
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-white mb-4">Product Usage</h2>
                 <p className="text-white/90 mb-4">
-                  All TheSmartChef products should be used in accordance with the provided user manuals and safety
+                  All TheSmartChefs products should be used in accordance with the provided user manuals and safety
                   instructions. We are not responsible for any damage, injury, or loss resulting from improper use,
                   modification, or failure to follow safety guidelines.
                 </p>
@@ -91,7 +91,7 @@ export default function DisclaimerPage() {
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-white mb-4">Limitation of Liability</h2>
                 <p className="text-white/90 mb-4">
-                  In no event will TheSmartChef be liable for any loss or damage including without limitation, indirect
+                  In no event will TheSmartChefs be liable for any loss or damage including without limitation, indirect
                   or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits
                   arising out of, or in connection with, the use of this website or our products.
                 </p>

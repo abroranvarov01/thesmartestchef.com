@@ -20,7 +20,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/60" />
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">About TheSmartChef</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">About TheSmartChefs</h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Revolutionizing home cooking with innovative multicooker technology
             </p>
@@ -45,7 +45,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-4xl font-bold mb-6 text-white">Our Story</h2>
                 <p className="text-lg text-white/90 mb-4">
-                  Founded in 2020, TheSmartChef was born from a simple idea: cooking delicious, healthy meals
+                  Founded in 2020, TheSmartChefs was born from a simple idea: cooking delicious, healthy meals
                   shouldn&#39;t be complicated or time-consuming.
                 </p>
                 <p className="text-lg text-white/90 mb-4">
@@ -53,7 +53,7 @@ export default function AboutPage() {
                   combines cutting-edge technology with intuitive design.
                 </p>
                 <p className="text-lg text-white/90">
-                  Today, TheSmartChef products are trusted by millions of families worldwide, helping them create
+                  Today, TheSmartChefs products are trusted by millions of families worldwide, helping them create
                   memorable meals with ease.
                 </p>
               </div>

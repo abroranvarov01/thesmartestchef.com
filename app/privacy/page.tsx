@@ -129,9 +129,9 @@ export default function PrivacyPage() {
                 If you have any questions about this privacy policy or our data practices, please contact us at:
               </p>
               <p className="text-white/90 mt-2">
-                Email: privacy@thesmartchef.com
+                Email: privacy@thesmartchefs.com
                 <br />
-                Phone: 1-800-THESMARTCHEF
+                Phone: 1-800-THESMARTCHEFS
               </p>
             </div>
 

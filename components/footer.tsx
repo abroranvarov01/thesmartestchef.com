@@ -34,7 +34,7 @@ export function Footer() {
                   M
                 </span>
               </div>
-              <span className="text-xl font-bold">TheSmartChef</span>
+              <span className="text-xl font-bold">TheSmartChefs</span>
             </div>
             <p className="text-background/70">Making quick, delicious cooking accessible to everyone.</p>
           </div>
@@ -92,7 +92,7 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <Mail size={18} />
                 <a href="mailto:hello@multichef.com" className="hover:text-background transition">
-                  write-to@thesmartchef.com
+                  write-to@thesmartchefs.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -111,7 +111,7 @@ export function Footer() {
 
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-start gap-4 text-background/60 text-sm">
-            <p>© 2025 TheSmartChef. All rights reserved.</p>
+            <p>© 2025 TheSmartChefs. All rights reserved.</p>
             <p className="text-right max-w-2xl">
               As part of the Amazon Associates Program, we may earn a commission on qualifying purchases. Our content
               remains impartial and based on honest assessments.

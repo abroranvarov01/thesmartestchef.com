@@ -1,9 +1,11 @@
 import { Check, Star, Wind, Timer, Flame } from "lucide-react"
 import { Footer } from "@/components/footer"
+import Link from "next/link"
 
 export default function AirFryersPage() {
   const products = [
     {
+      slug: "airchef-pro-5-5l",
       name: "AirChef Pro 5.5L",
       price: "$129.99",
       image: "/modern-multicooker-on-kitchen-counter.jpg",
@@ -17,6 +19,7 @@ export default function AirFryersPage() {
       tempRange: "80-200°C",
     },
     {
+      slug: "airchef-compact-3-5l",
       name: "AirChef Compact 3.5L",
       price: "$89.99",
       image: "/compact-multicooker-6-liter-red.jpg",
@@ -30,6 +33,7 @@ export default function AirFryersPage() {
       tempRange: "80-200°C",
     },
     {
+      slug: "airchef-xl-7l",
       name: "AirChef XL 7L",
       price: "$179.99",
       image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
@@ -43,6 +47,7 @@ export default function AirFryersPage() {
       tempRange: "50-230°C",
     },
     {
+      slug: "airchef-mini-2-5l",
       name: "AirChef Mini 2.5L",
       price: "$69.99",
       image: "/compact-multicooker-6-liter-red.jpg",
@@ -56,6 +61,7 @@ export default function AirFryersPage() {
       tempRange: "80-200°C",
     },
     {
+      slug: "airchef-family-9l",
       name: "AirChef Family 9L",
       price: "$219.99",
       image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
@@ -69,6 +75,7 @@ export default function AirFryersPage() {
       tempRange: "40-230°C",
     },
     {
+      slug: "airchef-smart-6l",
       name: "AirChef Smart 6L",
       price: "$159.99",
       image: "/modern-multicooker-on-kitchen-counter.jpg",
@@ -82,6 +89,7 @@ export default function AirFryersPage() {
       tempRange: "60-220°C",
     },
     {
+      slug: "airchef-turbo-5l",
       name: "AirChef Turbo 5L",
       price: "$139.99",
       image: "/modern-multicooker-on-kitchen-counter.jpg",
@@ -95,6 +103,7 @@ export default function AirFryersPage() {
       tempRange: "80-220°C",
     },
     {
+      slug: "airchef-deluxe-8l",
       name: "AirChef Deluxe 8L",
       price: "$199.99",
       image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
@@ -108,6 +117,7 @@ export default function AirFryersPage() {
       tempRange: "50-230°C",
     },
     {
+      slug: "airchef-eco-4-5l",
       name: "AirChef Eco 4.5L",
       price: "$109.99",
       image: "/compact-multicooker-6-liter-red.jpg",
@@ -141,12 +151,54 @@ export default function AirFryersPage() {
   ]
 
   const recipes = [
-    { name: "Crispy French Fries", time: "20 min", difficulty: "Easy" },
-    { name: "Air Fried Chicken Wings", time: "25 min", difficulty: "Easy" },
-    { name: "Roasted Vegetables", time: "15 min", difficulty: "Easy" },
-    { name: "Fish & Chips", time: "30 min", difficulty: "Medium" },
-    { name: "Homemade Donuts", time: "18 min", difficulty: "Medium" },
-    { name: "Stuffed Peppers", time: "22 min", difficulty: "Medium" },
+    {
+      name: "Crispy French Fries",
+      time: "20 min",
+      difficulty: "Easy",
+      image: "/golden-crispy-french-fries-in-air-fryer-basket.jpg",
+      description:
+        "Perfectly golden and crispy french fries made with minimal oil. Cut potatoes into uniform strips, toss with a tablespoon of oil and your favorite seasonings, then air fry until golden brown. These fries are healthier than deep-fried versions while maintaining that irresistible crunch.",
+    },
+    {
+      name: "Air Fried Chicken Wings",
+      time: "25 min",
+      difficulty: "Easy",
+      image: "/crispy-buffalo-chicken-wings-with-sauce.jpg",
+      description:
+        "Juicy chicken wings with a crispy exterior, cooked to perfection without deep frying. Season with your choice of spices or toss in buffalo sauce after cooking. These wings are so crispy and flavorful, you won't believe they're made with 85% less oil than traditional fried wings.",
+    },
+    {
+      name: "Roasted Vegetables",
+      time: "15 min",
+      difficulty: "Easy",
+      image: "/colorful-roasted-vegetables-medley.jpg",
+      description:
+        "A vibrant medley of seasonal vegetables roasted to caramelized perfection. Bell peppers, zucchini, carrots, and broccoli are tossed with olive oil, garlic, and herbs, then air fried until tender with crispy edges. A healthy and delicious side dish that pairs perfectly with any main course.",
+    },
+    {
+      name: "Fish & Chips",
+      time: "30 min",
+      difficulty: "Medium",
+      image: "/crispy-fish-and-chips-with-tartar-sauce.jpg",
+      description:
+        "Classic British comfort food made healthier in the air fryer. Flaky white fish coated in a crispy breadcrumb crust, served alongside golden french fries. The fish stays moist and tender inside while achieving that perfect golden crunch outside. Serve with tartar sauce and lemon wedges for an authentic experience.",
+    },
+    {
+      name: "Homemade Donuts",
+      time: "18 min",
+      difficulty: "Medium",
+      image: "/glazed-donuts-with-colorful-sprinkles.jpg",
+      description:
+        "Light and fluffy donuts without the guilt of deep frying. These air-fried donuts are soft, pillowy, and perfect for glazing or coating with cinnamon sugar. Make a batch for breakfast or dessert, and customize with your favorite toppings like chocolate glaze, vanilla icing, or colorful sprinkles.",
+    },
+    {
+      name: "Stuffed Peppers",
+      time: "22 min",
+      difficulty: "Medium",
+      image: "/colorful-stuffed-bell-peppers-with-cheese.jpg",
+      description:
+        "Colorful bell peppers filled with a savory mixture of ground meat, rice, vegetables, and melted cheese. The air fryer cooks the peppers to tender perfection while keeping them slightly firm. This complete meal is nutritious, satisfying, and bursting with Mediterranean flavors.",
+    },
   ]
 
   return (
@@ -186,14 +238,14 @@ export default function AirFryersPage() {
         />
         <div className="absolute inset-0 bg-black/40" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-8">
+        <div className="absolute inset-0 z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-0.5">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Smart Air Fryers</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Enjoy crispy, delicious food with up to 85% less oil
           </p>
         </div>
 
-        <div className="relative z-10 flex items-center justify-center gap-8 px-4 py-16">
+        <div className="relative z-10 flex items-center justify-center gap-8 px-4 py-32 my-40 pb-4">
           <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <img
               src="/golden-crispy-french-fries-in-white-bowl-on-dark-s.jpg"
@@ -251,7 +303,7 @@ export default function AirFryersPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-20 relative overflow-hidden">
+      <section id="products" className="py-20 relative overflow-hidden">
         <div
           className="absolute inset-0"
           style={{
@@ -332,9 +384,13 @@ export default function AirFryersPage() {
                     >
                       See on Amazon
                     </a>
-                    <button className="flex-1 px-4 py-3 bg-yellow-800 text-white rounded-lg hover:bg-yellow-800/90 transition font-semibold cursor-pointer">
+                    <Link
+                      href={`/airfryers/${product.slug}#product-card`}
+                      scroll={true}
+                      className="flex-1 px-4 py-3 bg-yellow-800 text-white rounded-lg hover:bg-yellow-800/90 transition font-semibold cursor-pointer text-center"
+                    >
                       Access the full review
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -484,15 +540,26 @@ export default function AirFryersPage() {
             {recipes.map((recipe, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md hover:shadow-lg transition border border-white/20"
+                className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-md hover:shadow-lg transition border border-white/20"
               >
-                <h3 className="text-xl font-semibold mb-3 text-white">{recipe.name}</h3>
-                <div className="flex items-center justify-between text-sm text-white/80">
-                  <span className="flex items-center gap-2">
-                    <Timer size={16} />
-                    {recipe.time}
-                  </span>
-                  <span className="px-3 py-1 text-white rounded-full bg-slate-600">{recipe.difficulty}</span>
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={recipe.image || "/placeholder.svg"}
+                    alt={recipe.name}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-3 text-white">{recipe.name}</h3>
+                  <p className="text-white/80 text-sm mb-4 leading-relaxed">{recipe.description}</p>
+                  <div className="flex items-center justify-between text-sm text-white/80 pt-4 border-t border-white/10">
+                    <span className="flex items-center gap-2">
+                      <Timer size={16} />
+                      {recipe.time}
+                    </span>
+                    <span className="px-3 py-1 text-white rounded-full bg-slate-600">{recipe.difficulty}</span>
+                  </div>
                 </div>
               </div>
             ))}
