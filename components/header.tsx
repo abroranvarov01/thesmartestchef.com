@@ -37,14 +37,14 @@ export function Header() {
       <div className="absolute inset-0 bg-black/50" />
 
       <nav
-        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"
+        className="relative  mx-auto px-4 sm:px-6 lg:px-8 py-6"
         style={{
           backgroundImage: "url('/wooden-table-bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/60 rounded-lg" />
+        <div className="absolute inset-0 bg-black/60 rounded-none" />
 
         <div className="flex items-center justify-between relative z-10">
           {/* Logo and Brand Section */}
