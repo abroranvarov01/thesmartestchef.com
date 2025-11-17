@@ -40,11 +40,11 @@ export function CTA() {
             Shop Now
           </Link>
           <Link
-            href="/airfryers#products"
+            href="/reviews"
             scroll={true}
             className="border-2 px-8 py-3 rounded-lg font-semibold hover:bg-primary/10 transition text-card border-popover cursor-pointer"
           >
-            Other products
+            Reviews
           </Link>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function PrivacyPage() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Fc7hIAMz1EexOCOCibu5D0pzGH5CNz.png')",
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UdQa3BotzlJj6er6Oroy9QgkqDpoAS.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Fc7hIAMz1EexOCOCibu5D0pzGH5CNz.png')",
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UdQa3BotzlJj6er6Oroy9QgkqDpoAS.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",

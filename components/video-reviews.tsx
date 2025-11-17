@@ -4,7 +4,7 @@ import { Play, X } from "lucide-react"
 import { useState } from "react"
 
 export function VideoReviews() {
-  const [selectedVideo, setSelectedVideo] = useState<number | null>(null)
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
 
   const reviews = [
     {
@@ -26,12 +26,17 @@ export function VideoReviews() {
     {
       id: 3,
       title: "Quick Chicken Curry",
-      chef: "Chef Aishwarya", // Changed from "Chef Sarah" to "Chef Aishwarya"
+      chef: "Chef Aishwarya",
       thumbnail: "/aromatic-chicken-curry-in-multicooker.jpg",
       duration: "10:30",
       videoUrl: "https://youtu.be/196O0LPFCec",
     },
   ]
+
+  const getEmbedUrl = (url: string) => {
+    const videoId = url.split("/").pop()
+    return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`
+  }
 
   return (
     <section id="reviews" className="relative py-20 md:py-32 overflow-hidden">
@@ -51,7 +56,7 @@ export function VideoReviews() {
           backgroundImage: "url('/dark-rustic-wood-bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundAttachment: "fixed", // Added fixed attachment to align with base background
+          backgroundAttachment: "fixed",
           opacity: 0.85,
         }}
       />
@@ -65,7 +70,7 @@ export function VideoReviews() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review) => (
-            <div key={review.id} className="group cursor-pointer" onClick={() => setSelectedVideo(review.id)}>
+            <div key={review.id} className="group cursor-pointer" onClick={() => setSelectedVideo(review.videoUrl)}>
               <div className="relative overflow-hidden rounded-xl mb-4">
                 <img
                   src={review.thumbnail || "/placeholder.svg"}
@@ -88,45 +93,30 @@ export function VideoReviews() {
             </div>
           ))}
         </div>
-
-        {selectedVideo && (
-          <div
-            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
-            onClick={() => setSelectedVideo(null)}
-          >
-            <div
-              className="bg-background rounded-xl overflow-hidden max-w-4xl w-full relative"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                onClick={() => setSelectedVideo(null)}
-                className="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition"
-              >
-                <X className="w-6 h-6" />
-              </button>
-
-              <div className="aspect-video bg-black">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={reviews.find((r) => r.id === selectedVideo)?.videoUrl}
-                  title={reviews.find((r) => r.id === selectedVideo)?.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  {reviews.find((r) => r.id === selectedVideo)?.title}
-                </h3>
-                <p className="text-muted-foreground">by {reviews.find((r) => r.id === selectedVideo)?.chef}</p>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
+
+      {selectedVideo && (
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedVideo(null)}
+        >
+          <div className="relative w-full max-w-4xl aspect-video" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => setSelectedVideo(null)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition"
+              aria-label="Close video"
+            >
+              <X size={32} />
+            </button>
+            <iframe
+              src={getEmbedUrl(selectedVideo)}
+              className="w-full h-full rounded-lg"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </section>
   )
 }

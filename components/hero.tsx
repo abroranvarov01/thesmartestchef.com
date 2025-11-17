@@ -42,10 +42,10 @@ export function Hero() {
                 Multicookers
               </Link>
               <Link
-                href="/airfryers"
+                href="/recipes"
                 className="border-2 px-8 py-3 rounded-lg font-semibold hover:bg-primary/5 transition text-card border-background cursor-pointer text-center"
               >
-                Airfryers
+                Recipes
               </Link>
             </div>
           </div>

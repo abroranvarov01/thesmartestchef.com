@@ -8,7 +8,7 @@ export default function DisclaimerPage() {
         <section
           className="relative py-20 overflow-hidden"
           style={{
-            backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Fc7hIAMz1EexOCOCibu5D0pzGH5CNz.png')`,
+            backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-h9tFnXCLcQ6cYXbZXy7KHO8w0LubVg.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
         <section
           className="relative py-16 overflow-hidden"
           style={{
-            backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Fc7hIAMz1EexOCOCibu5D0pzGH5CNz.png')`,
+            backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-h9tFnXCLcQ6cYXbZXy7KHO8w0LubVg.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

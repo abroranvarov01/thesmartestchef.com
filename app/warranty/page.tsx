@@ -30,12 +30,10 @@ export default function WarrantyPage() {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VUycjd867Qj6B9Ksyia2At7XxmkoMj.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rGSVxZ9lxVpbdB8hmHiDXNQpcUekln.png')",
             backgroundAttachment: "fixed",
           }}
         />
@@ -56,18 +54,18 @@ export default function WarrantyPage() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Z8eK46GHXMNVF4fk9Db3NRsFBK4oqE.png')",
+              "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rGSVxZ9lxVpbdB8hmHiDXNQpcUekln.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",
           }}
         />
-        <div className="absolute inset-0 bg-white/70" />
+        <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-card rounded-2xl p-8 shadow-lg border border-border mb-12">
+          <div className="rounded-2xl p-8 shadow-lg border border-border mb-12 bg-transparent text-white">
             <h2 className="text-3xl font-bold mb-6">Standard Warranty Coverage</h2>
-            <p className="text-lg mb-6 text-foreground">
+            <p className="text-lg mb-6 text-white">
               All MultiChef products come with a comprehensive 2-year manufacturer's warranty from the date of purchase.
               This warranty covers defects in materials and workmanship under normal use.
             </p>
@@ -93,8 +91,8 @@ export default function WarrantyPage() {
           {/* What's Covered */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold mb-6">What's Covered</h2>
-            <div className="bg-card rounded-lg p-6 border border-border">
-              <ul className="space-y-3">
+            <div className="rounded-lg p-6 border border-border bg-transparent">
+              <ul className="space-y-3 text-white">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="text-green-500 flex-shrink-0 mt-1" size={20} />
                   <span>Manufacturing defects in materials or workmanship</span>
@@ -122,27 +120,27 @@ export default function WarrantyPage() {
           {/* What's Not Covered */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold mb-6">What's Not Covered</h2>
-            <div className="bg-card rounded-lg p-6 border border-border">
-              <ul className="space-y-3 text-muted-foreground">
+            <div className="rounded-lg p-6 border border-border bg-transparent">
+              <ul className="space-y-3 text-white">
                 <li className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-1 text-red-500 font-extrabold">✕</span>
-                  <span className="text-foreground">Damage from misuse, abuse, or accidents</span>
+                  <span className="text-white">Damage from misuse, abuse, or accidents</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 flex-shrink-0 mt-1 font-extrabold">✕</span>
-                  <span className="text-foreground">Normal wear and tear (scratches, discoloration)</span>
+                  <span className="text-white">Normal wear and tear (scratches, discoloration)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 flex-shrink-0 mt-1 font-extrabold">✕</span>
-                  <span className="text-foreground">Damage from unauthorized repairs or modifications</span>
+                  <span className="text-white">Damage from unauthorized repairs or modifications</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 flex-shrink-0 mt-1 font-extrabold">✕</span>
-                  <span className="text-foreground">Consumable parts (sealing rings, filters)</span>
+                  <span className="text-white">Consumable parts (sealing rings, filters)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 flex-shrink-0 mt-1 font-extrabold">✕</span>
-                  <span className="text-foreground">Damage from improper voltage or power surges</span>
+                  <span className="text-white">Damage from improper voltage or power surges</span>
                 </li>
               </ul>
             </div>
@@ -152,54 +150,54 @@ export default function WarrantyPage() {
           <div className="mb-12">
             <h2 className="text-3xl font-bold mb-6">How to File a Warranty Claim</h2>
             <div className="space-y-4">
-              <div className="bg-card rounded-lg p-6 border border-border">
+              <div className="rounded-lg p-6 border border-border bg-transparent">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 text-primary-foreground rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-foreground">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-card text-black">
                     1
                   </div>
-                  <div>
+                  <div className="text-white">
                     <h3 className="font-semibold mb-2">Contact Customer Support</h3>
-                    <p className="text-foreground">
+                    <p className="text-white">
                       Email us at warranty@multichef.com or call +1 (234) 567-890 with your product details and issue
                       description.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-card rounded-lg p-6 border border-border">
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 text-primary-foreground rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-foreground">
+              <div className="rounded-lg p-6 border border-border bg-transparent">
+                <div className="flex items-start gap-4 text-white">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-white text-black">
                     2
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Provide Proof of Purchase</h3>
-                    <p className="text-foreground">
+                    <p className="text-white">
                       Submit your original receipt or order confirmation showing the purchase date.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-card rounded-lg p-6 border border-border">
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 text-primary-foreground rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-foreground">
+              <div className="rounded-lg p-6 border border-border bg-transparent">
+                <div className="flex items-start gap-4 text-white">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-white text-black">
                     3
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Receive Instructions</h3>
-                    <p className="text-foreground">
+                    <p className="text-white">
                       Our team will review your claim and provide shipping instructions or troubleshooting steps.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-card rounded-lg p-6 border border-border">
+              <div className="rounded-lg p-6 border border-border bg-transparent text-white">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 text-primary-foreground rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-foreground">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-white text-black">
                     4
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Get Your Product Repaired or Replaced</h3>
-                    <p className="text-foreground">
+                    <p className="text-white">
                       We'll repair or replace your product and ship it back to you within 7-10 business days.
                     </p>
                   </div>
@@ -209,18 +207,12 @@ export default function WarrantyPage() {
           </div>
 
           {/* Extended Warranty */}
-          <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 border border-primary/20">
+          <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 border border-primary/20 text-white bg-transparent">
             <h2 className="text-3xl font-bold mb-4">Extended Warranty Available</h2>
-            <p className="text-lg mb-6 text-foreground">
+            <p className="text-lg mb-6 text-white">
               Extend your coverage for up to 5 years with our Extended Warranty Plan. Get additional protection and
               priority support for complete peace of mind.
             </p>
-            <Link
-              href="/contact"
-              className="inline-block px-6 py-3 text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition bg-foreground"
-            >
-              Learn More About Extended Warranty
-            </Link>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, ChevronDown } from "lucide-react"
+import { Menu, ChevronDown } from 'lucide-react'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Header() {
@@ -11,12 +11,11 @@ export function Header() {
 
   const navItems = [
     { href: "/multicookers", label: "Multicookers" },
-    { href: "/airfryers", label: "Airfryers" },
+    { href: "/reviews", label: "Reviews" },
   ]
 
   const customerServiceItems = [
     { href: "/about", label: "About Us" },
-    { href: "/reviews", label: "Reviews" },
     { href: "/contact", label: "Contact" },
     { href: "/terms", label: "Terms & Conditions" },
     { href: "/privacy", label: "Privacy & Policy" },
@@ -37,7 +36,7 @@ export function Header() {
       <div className="absolute inset-0 bg-black/50" />
 
       <nav
-        className="relative  mx-auto px-4 sm:px-6 lg:px-8 py-6"
+        className="relative mx-auto px-4 sm:px-6 lg:px-8 py-6"
         style={{
           backgroundImage: "url('/wooden-table-bg.jpg')",
           backgroundSize: "cover",
@@ -70,11 +69,11 @@ export function Header() {
               ))}
 
               <Link
-                href="/accessories"
+                href="/recipes"
                 scroll={true}
                 className="text-white hover:text-white/80 transition-colors font-medium"
               >
-                Accessories
+                Recipes
               </Link>
 
               <div
@@ -115,14 +114,6 @@ export function Header() {
                   </div>
                 )}
               </div>
-
-              <Link
-                href="/recipes"
-                scroll={true}
-                className="text-white hover:text-white/80 transition-colors font-medium"
-              >
-                Recipes
-              </Link>
             </div>
           </div>
 
@@ -147,15 +138,6 @@ export function Header() {
                   </Link>
                 ))}
 
-                <Link
-                  href="/accessories"
-                  scroll={true}
-                  className="text-lg font-medium hover:text-primary transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Accessories
-                </Link>
-
                 <div className="border-t pt-4 mt-2">
                   <p className="text-sm font-semibold text-gray-500 mb-2">Customer Service</p>
                   {customerServiceItems.map((item) => (
@@ -170,15 +152,6 @@ export function Header() {
                     </Link>
                   ))}
                 </div>
-
-                <Link
-                  href="/recipes"
-                  scroll={true}
-                  className="text-lg font-medium hover:text-primary transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Recipes
-                </Link>
               </nav>
             </SheetContent>
           </Sheet>

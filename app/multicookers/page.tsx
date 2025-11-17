@@ -1,109 +1,10 @@
-import { Check, Star, Zap, Shield, Thermometer } from "lucide-react"
+import { Check, Star, Zap, Shield, Thermometer } from 'lucide-react'
 import { Footer } from "@/components/footer"
 import Link from "next/link"
+import { multicookerProducts } from "@/lib/products"
 
 export default function MulticookersPage() {
-  const products = [
-    {
-      slug: "ninja-mc1001-foodi",
-      name: "Ninja MC1001 Foodi PossibleCooker PRO 8.5",
-      price: "",
-      image: "https://m.media-amazon.com/images/I/61-hMn0AQsL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-      rating: 4.7,
-      reviews: 4893,
-      features: ["Ninja", "Sea Salt Gray", "Aluminum", '18"D x 12.64"W x 10.59"H', "8.5 Quarts", "825 watts"],
-      badge: "Premium",
-      amazonLink: "https://www.amazon.com/Ninja-MC1001-PossibleCooker-Multi-Cooker-Integrated/dp/B0B4PPHG8G",
-    },
-    {
-      slug: "compact-6l",
-      name: "CHEF iQ Smart Pressure Cooker with WiFi",
-      price: "",
-      image: "https://m.media-amazon.com/images/I/71qaNsaMkpL._AC_SX679_.jpg",
-      rating: 4.8,
-      reviews: 892,
-      features: ["CHEF iQ", "6 Quarts", "Aluminum / ABS & PP plastic", "Black", "Matte", '13"D x 13"W x 13"H'],
-      badge: "Limited time deal",
-      amazonLink: "https://www.amazon.com/CHEF-Worlds-Smartest-Pressure-Cooker/dp/B0863JB424",
-    },
-    {
-      slug: "elite-10l",
-      name: "TheSmartChefs Elite 10L",
-      price: "$249.99",
-      image: "/modern-multicooker-on-kitchen-counter.jpg",
-      rating: 5.0,
-      reviews: 634,
-      features: ["10L Capacity", "20 Cooking Programs", "Premium Build", "WiFi Connected"],
-      badge: "Premium",
-      amazonLink: "https://www.amazon.com",
-    },
-    {
-      slug: "mini-4l",
-      name: "TheSmartChefs Mini 4L",
-      price: "$99.99",
-      image: "/compact-multicooker-6-liter-red.jpg",
-      rating: 4.7,
-      reviews: 543,
-      features: ["4L Capacity", "10 Cooking Programs", "Compact Design", "Perfect for 2-3 People"],
-      badge: "Budget Friendly",
-      amazonLink: "https://www.amazon.com",
-    },
-    {
-      slug: "family-12l",
-      name: "TheSmartChefs Family 12L",
-      price: "$299.99",
-      image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
-      rating: 4.9,
-      reviews: 421,
-      features: ["12L Capacity", "18 Cooking Programs", "Extra Large Pot", "Feeds 8-10 People"],
-      badge: "Family Size",
-      amazonLink: "https://www.amazon.com",
-    },
-    {
-      slug: "air-7l",
-      name: "TheSmartChefs Air 7L",
-      price: "$229.99",
-      image: "/modern-multicooker-on-kitchen-counter.jpg",
-      rating: 4.8,
-      reviews: 789,
-      features: ["7L Capacity", "Air Fry Function", "16 Programs", "Dual Cooking Modes"],
-      badge: "Versatile",
-      amazonLink: "https://www.amazon.com",
-    },
-    {
-      slug: "express-5l",
-      name: "TheSmartChefs Express 5L",
-      price: "$179.99",
-      image: "/compact-multicooker-6-liter-red.jpg",
-      rating: 4.6,
-      reviews: 612,
-      features: ["5L Capacity", "High Pressure Mode", "13 Programs", "Quick Release Valve"],
-      badge: "Fast Cooking",
-      amazonLink: "https://www.amazon.com",
-    },
-    {
-      slug: "gourmet-9l",
-      name: "TheSmartChefs Gourmet 9L",
-      price: "$279.99",
-      image: "/large-professional-multicooker-8-liter-stainless-s.jpg",
-      rating: 4.9,
-      reviews: 356,
-      features: ["9L Capacity", "22 Cooking Programs", "Sous Vide Mode", "Recipe App Included"],
-      badge: "Chef's Choice",
-      amazonLink: "https://www.amazon.com",
-    },
-    {
-      slug: "eco-6l",
-      name: "TheSmartChefs Eco 6L",
-      price: "$139.99",
-      image: "/modern-multicooker-on-kitchen-counter.jpg",
-      rating: 4.7,
-      reviews: 498,
-      features: ["6L Capacity", "Energy Saving Mode", "12 Programs", "Eco-Friendly Materials"],
-      badge: "Eco-Friendly",
-      amazonLink: "https://www.amazon.com",
-    },
-  ]
+  const products = multicookerProducts
 
   const features = [
     {
@@ -227,9 +128,10 @@ export default function MulticookersPage() {
             {products.map((product, index) => (
               <div
                 key={index}
-                className="bg-white/15 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition border border-white/20"
+                className="bg-white/15 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition border border-white/20 flex flex-col"
               >
-                <div className="relative h-64">
+                {/* Изображение */}
+                <div className="relative h-64 flex-shrink-0">
                   <div
                     className="absolute inset-0"
                     style={{
@@ -244,8 +146,11 @@ export default function MulticookersPage() {
                     </div>
                   )}
                 </div>
-                <div className="p-6 bg-white/15 backdrop-blur-md">
+
+                {/* Текстовая часть — растягивается */}
+                <div className="flex flex-col flex-1 p-6 bg-white/15">
                   <h3 className="text-2xl font-bold mb-2 text-white">{product.name}</h3>
+
                   <div className="flex items-center gap-2 mb-4">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
@@ -262,7 +167,8 @@ export default function MulticookersPage() {
                       {product.rating} ({product.reviews} reviews)
                     </span>
                   </div>
-                  <div className="space-y-2 mb-6">
+
+                  <div className="space-y-2 mb-6 flex-1">
                     {product.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-sm text-white/90">
                         <Check className="text-primary" size={16} />
@@ -270,18 +176,19 @@ export default function MulticookersPage() {
                       </div>
                     ))}
                   </div>
-                  <div className="flex items-center gap-3">
+
+                  <div className="flex items-center gap-3 mt-auto">
                     <a
                       href={product.amazonLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-4 py-3 bg-white text-black rounded-lg hover:bg-white/90 transition font-semibold cursor-pointer text-center"
+                      className="flex-1 px-4 py-3 bg-white text-black rounded-lg hover:bg-white/90 transition font-semibold text-center"
                     >
                       See on Amazon
                     </a>
                     <Link
                       href={`/multicookers/${product.slug}`}
-                      className="flex-1 px-4 py-3 text-white rounded-lg hover:bg-yellow-800/90 transition font-semibold cursor-pointer text-center bg-yellow-800"
+                      className="flex-1 px-4 py-3 text-white rounded-lg hover:bg-yellow-800/90 transition font-semibold text-center bg-yellow-800"
                     >
                       Access the full review
                     </Link>
@@ -325,135 +232,107 @@ export default function MulticookersPage() {
                   <th className="text-left p-3 font-semibold sticky left-0 bg-black/60 backdrop-blur-sm text-white">
                     Feature
                   </th>
-                  <th className="text-center p-3 font-semibold text-white">Mini 4L</th>
-                  <th className="text-center p-3 font-semibold text-white">Express 5L</th>
-                  <th className="text-center p-3 font-semibold text-white">Compact 6L</th>
-                  <th className="text-center p-3 font-semibold text-white">Eco 6L</th>
-                  <th className="text-center p-3 font-semibold text-white">Air 7L</th>
-                  <th className="text-center p-3 font-semibold text-white">Pro 8L</th>
-                  <th className="text-center p-3 font-semibold text-white">Gourmet 9L</th>
-                  <th className="text-center p-3 font-semibold text-white">Elite 10L</th>
-                  <th className="text-center p-3 font-semibold text-white">Family 12L</th>
+                  {products.map((product) => (
+                    <th key={product.slug} className="text-center p-3 font-semibold text-white min-w-[120px]">
+                      {product.name}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-white/10">
                   <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">Capacity</td>
-                  <td className="text-center p-3 text-white/90">4L</td>
-                  <td className="text-center p-3 text-white/90">5L</td>
-                  <td className="text-center p-3 text-white/90">6L</td>
-                  <td className="text-center p-3 text-white/90">6L</td>
-                  <td className="text-center p-3 text-white/90">7L</td>
-                  <td className="text-center p-3 text-white/90">8L</td>
-                  <td className="text-center p-3 text-white/90">9L</td>
-                  <td className="text-center p-3 text-white/90">10L</td>
-                  <td className="text-center p-3 text-white/90">12L</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90">
+                      {product.specifications.Capacity || "-"}
+                    </td>
+                  ))}
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">
-                    Cooking Programs
+                    Power Output
                   </td>
-                  <td className="text-center p-3 text-white/90">10</td>
-                  <td className="text-center p-3 text-white/90">13</td>
-                  <td className="text-center p-3 text-white/90">12</td>
-                  <td className="text-center p-3 text-white/90">12</td>
-                  <td className="text-center p-3 text-white/90">16</td>
-                  <td className="text-center p-3 text-white/90">15</td>
-                  <td className="text-center p-3 text-white/90">22</td>
-                  <td className="text-center p-3 text-white/90">20</td>
-                  <td className="text-center p-3 text-white/90">18</td>
-                </tr>
-                <tr className="border-b border-white/10">
-                  <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">
-                    WiFi Connected
-                  </td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">✓</td>
-                  <td className="text-center p-3 text-white/90">✓</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                </tr>
-                <tr className="border-b border-white/10">
-                  <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">
-                    Air Fry Function
-                  </td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">✓</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                </tr>
-                <tr className="border-b border-white/10">
-                  <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">
-                    Sous Vide Mode
-                  </td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">✓</td>
-                  <td className="text-center p-3 text-white/90">-</td>
-                  <td className="text-center p-3 text-white/90">-</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90">
+                      {product.specifications.PowerOutput || product.specifications["Power Output"] || "-"}
+                    </td>
+                  ))}
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">Material</td>
-                  <td className="text-center p-3 text-white/90">Non-Stick</td>
-                  <td className="text-center p-3 text-white/90">Stainless</td>
-                  <td className="text-center p-3 text-white/90">Non-Stick</td>
-                  <td className="text-center p-3 text-white/90">Eco-Ceramic</td>
-                  <td className="text-center p-3 text-white/90">Stainless</td>
-                  <td className="text-center p-3 text-white/90">Stainless</td>
-                  <td className="text-center p-3 text-white/90">Premium Steel</td>
-                  <td className="text-center p-3 text-white/90">Premium Steel</td>
-                  <td className="text-center p-3 text-white/90">Stainless</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90">
+                      {product.specifications.Material || "-"}
+                    </td>
+                  ))}
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">
-                    Energy Efficiency
+                    WiFi / Smart Features
                   </td>
-                  <td className="text-center p-3 text-white/90">A+</td>
-                  <td className="text-center p-3 text-white/90">A</td>
-                  <td className="text-center p-3 text-white/90">A++</td>
-                  <td className="text-center p-3 text-white/90">A+++</td>
-                  <td className="text-center p-3 text-white/90">A+</td>
-                  <td className="text-center p-3 text-white/90">A+</td>
-                  <td className="text-center p-3 text-white/90">A</td>
-                  <td className="text-center p-3 text-white/90">A+</td>
-                  <td className="text-center p-3 text-white/90">A</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90">
+                      {product.specifications.SmartFeatures || product.specifications.Connectivity ? "✓" : "-"}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">
+                    Special Features
+                  </td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90 text-xs">
+                      {product.specifications.SpecialFeature ||
+                        product.specifications.Technology ||
+                        product.specifications.CooktopType ||
+                        "-"}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">
+                    Cooking Functions
+                  </td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90 text-xs">
+                      {product.specifications.CookingPrograms ||
+                        product.specifications.Functions ||
+                        product.specifications.CookingFunctions ||
+                        "-"}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">Dimensions</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90 text-xs">
+                      {product.specifications.Dimensions || "-"}
+                    </td>
+                  ))}
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">Weight</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90">
+                      {product.specifications.Weight || "-"}
+                    </td>
+                  ))}
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">Warranty</td>
-                  <td className="text-center p-3 text-white/90">1 Year</td>
-                  <td className="text-center p-3 text-white/90">2 Years</td>
-                  <td className="text-center p-3 text-white/90">2 Years</td>
-                  <td className="text-center p-3 text-white/90">2 Years</td>
-                  <td className="text-center p-3 text-white/90">2 Years</td>
-                  <td className="text-center p-3 text-white/90">2 Years</td>
-                  <td className="text-center p-3 text-white/90">3 Years</td>
-                  <td className="text-center p-3 text-white/90">3 Years</td>
-                  <td className="text-center p-3 text-white/90">2 Years</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90">
+                      {product.specifications.Warranty || "-"}
+                    </td>
+                  ))}
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="p-3 font-medium sticky left-0 bg-black/60 backdrop-blur-sm text-white">Best For</td>
-                  <td className="text-center p-3 text-white/90">Singles</td>
-                  <td className="text-center p-3 text-white/90">Quick Meals</td>
-                  <td className="text-center p-3 text-white/90">Couples</td>
-                  <td className="text-center p-3 text-white/90">Eco-Conscious</td>
-                  <td className="text-center p-3 text-white/90">Versatility</td>
-                  <td className="text-center p-3 text-white/90">Families</td>
-                  <td className="text-center p-3 text-white/90">Gourmet Cooks</td>
-                  <td className="text-center p-3 text-white/90">Tech Lovers</td>
-                  <td className="text-center p-3 text-white/90">Large Families</td>
+                  {products.map((product) => (
+                    <td key={product.slug} className="text-center p-3 text-white/90 text-xs">
+                      {product.specifications.IdealFor || product.specifications["Ideal For"] || "-"}
+                    </td>
+                  ))}
                 </tr>
               </tbody>
             </table>
